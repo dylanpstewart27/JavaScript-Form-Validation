@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="deliverable5style.css">
+  <title> Customer Information </title>
+</head>
+<body>
+
+<h1> Welcome! </h1>
+<p> Please enter your information here. </p>
+<form>
+  First name:<br>
+  <input type="text" name="firstname" required>
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" required>
+  <br>
+  Email:<br>
+  <input type="text" name="email" required>
+   <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+var x = document.forms["frm1"]["firstName"].value;
+if (x == "") {
+alert ("First Name must be filled out");
+return false;
+}
+}
+function myFunction() {
+var y = document.forms["frm1"]["lastName"].value;
+if (y == "") {
+alert ("Last Name must be filled out");
+return false;
+}
+}function myFunction() {
+var z = document.forms["frm1"]["email"].value;
+if (z == "") {
+alert ("Email must be filled out");
+return false;
+}
+}
+</script>
+</body>
+</html>
